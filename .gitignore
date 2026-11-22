@@ -1,3 +1,44 @@
 # Local only, never pushed
 CLAUDE.md
 learning/
+
+# Secrets: commit only *.example files with dummy values
+.env
+.env.*
+!.env.example
+*.tfvars
+!*.tfvars.example
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Java / Maven
+target/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editors / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Installers and archives
+*.msi
+*.exe
+*.zip
